@@ -8,7 +8,7 @@ function App() {
   const [tasks, setTasks] = useState([]);
   const [employees, setEmployees] = useState([]);
 
-  // Initialize sample data
+  
   useEffect(() => {
     const sampleEmployees = [
       {
@@ -112,7 +112,7 @@ function App() {
     if (role === 'admin' && username === 'admin123') {
       setUser({ role: 'admin', username });
     } else if (role === 'employee' && username === 'emp123') {
-      // For demo, show first employee
+      
       setUser({ role: 'employee', employeeId: 1, username });
     } else {
       alert('Invalid credentials!');
